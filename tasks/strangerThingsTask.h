@@ -16,12 +16,12 @@ void strangerThingsTask(void* params) {
 
     leds->off();
     while (true) {
-        float factor = 0.1f + (esp_random() % 3686) / 4095.0f;
+        float factor = 0.05f + (esp_random() % 3960) / 4095.0f;
 
         targetColor.red = static_cast<uint16_t>(COLOR::RED.red * factor);
         targetColor.green = static_cast<uint16_t>(COLOR::RED.green * factor);
 
-        fadeTime = 50 + (esp_random() % 250);
+        fadeTime = 300 + (esp_random() % 1200);
         leds->fadeRGB(targetColor, fadeTime);
 
         delay(fadeTime + 1);
