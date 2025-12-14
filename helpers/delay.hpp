@@ -9,7 +9,7 @@
 #include <freertos/FreeRTOS.h>
 
 /**
- * @brief Wrapper for vTaskDelay(pdMS_TO_TICKS(x))
+ * @brief Wrapper for vTaskDelay(pdMS_TO_TICKS(ms))
  *
  * @return void
  */

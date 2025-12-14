@@ -3,7 +3,7 @@
  * @authors MarioS271
  */
 
-#include "delay.h"
+#include "delay.hpp"
 #include "rgb_color.hpp"
 #include "predef_colors.hpp"
 #include "ledcontroller.hpp"
